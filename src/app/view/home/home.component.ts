@@ -22,62 +22,10 @@ export class HomeComponent implements OnInit {
   expanded(event: any): void {
     // console.log(event);
   }
-  ngOnInit() {
-    this.loadTreatmentData();
+  ngOnInit() { 
     this.Appointments();
   }
-  loadTreatmentData() {
-    this.todayAppointments = [
-      {
-        treament: 'Composite C II',
-        patient: 'Richard Fox',
-        doctor: 'Elizabeth Smith'
-      },
-      {
-        treament: 'XRay - Periapical',
-        patient: 'Richard Fox',
-        doctor: 'Elizabeth Smith'
-      },
-      {
-        treament: 'Composite C II',
-        patient: 'Richard Fox',
-        doctor: 'Elizabeth Smith'
-      },
-      {
-        treament: 'Composite C II',
-        patient: 'Richard Fox',
-        doctor: 'Elizabeth Smith'
-      },
-    ];
-
-    this.tomorrowAppointments = [
-      {
-        treament: 'Composite C II',
-        patient: 'Richard Fox',
-        doctor: 'Elizabeth Smith'
-      },
-      {
-        treament: 'Composite C II',
-        patient: 'Richard Fox',
-        doctor: 'Elizabeth Smith'
-      },
-      {
-        treament: 'Composite C II',
-        patient: 'Richard Fox',
-        doctor: 'Elizabeth Smith'
-      },
-      {
-        treament: 'XRay - Periapical',
-        patient: 'Richard Fox',
-        doctor: 'Elizabeth Smith'
-      },
-      {
-        treament: 'XRay - Periapical',
-        patient: 'Richard Fox',
-        doctor: 'Elizabeth Smith'
-      },
-    ];
-  }
+   
 
   Appointments() {
     this.barChartAppointmentsOptions = {
