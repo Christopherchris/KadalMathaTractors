@@ -1,9 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import "./assets/variables";
+@import "./assets/scss/variables";
 // Import styles
 @import "~@coreui/coreui/scss/coreui";
 @import "flatpickr/dist/flatpickr.css";
+
 // If you want to add something do it here
 // @import "custom";
 @font-face {
@@ -81,4 +82,14 @@ body {
 body:not(*:root) {
     font-family: 'Segoe UI Web (West European)';
     background: #f5f5f5 !important;
+}
+
+.app,
+app-default-layout,
+app-root {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-height: 100vh;
 }

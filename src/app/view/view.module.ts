@@ -1,12 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms'; 
+import { FormsModule } from '@angular/forms';
 
 import { ViewRoutingModule } from './view-routing.module';
 import { DefaultLayoutComponent } from './default-layout.component';
-import { HomeComponent } from './home/home.component';
-import { StatisticsComponent } from './statistics/statistics.component';
-import { SettingsComponent } from './settings/settings.component';
 
 // Import 3rd party components
 import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
@@ -41,9 +38,6 @@ import { CollapseModule } from 'ngx-bootstrap/collapse';
 @NgModule({
   declarations: [
     DefaultLayoutComponent,
-    HomeComponent,
-    StatisticsComponent,
-    SettingsComponent 
   ],
   imports: [
     CommonModule,
@@ -63,7 +57,7 @@ import { CollapseModule } from 'ngx-bootstrap/collapse';
     CollapseModule,
     ScrollPanelModule,
     AccordionModule,
-    EditorModule
+    EditorModule,
   ]
 })
 export class ViewModule { }

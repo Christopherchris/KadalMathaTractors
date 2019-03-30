@@ -31,7 +31,7 @@
               "node_modules/primeicons/primeicons.css",
               "node_modules/primeng/resources/themes/nova-light/theme.css",
               "node_modules/primeng/resources/primeng.min.css",
-              "src/assets/css/apexo_style.scss",
+              "src/assets/scss/apexo_style.scss",
               "node_modules/quill/dist/quill.core.css",
               "node_modules/quill/dist/quill.snow.css",
               "node_modules/angular-calendar/css/angular-calendar.css",

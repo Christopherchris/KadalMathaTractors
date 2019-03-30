@@ -1,28 +1,31 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { DefaultLayoutComponent } from './default-layout.component';
-import { HomeComponent } from './home/home.component';
-import { SettingsComponent } from './settings/settings.component';
-import { StatisticsComponent } from './statistics/statistics.component'; 
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   {
     path: '', component: DefaultLayoutComponent,
     children: [
-     // { path: '', redirectTo: 'home', pathMatch: 'full' },
-      { path: 'home', component: HomeComponent },
-      { path: 'doctors', loadChildren: './doctors/doctors.module#DoctorsModule' },
-      { path: 'patients', loadChildren: './patients/patients.module#PatientsModule' },
+      { path: '', redirectTo: 'home', pathMatch: 'full' },
+      { path: 'home', loadChildren: './home/home.module#HomeModule' },
+      { path: 'dailyworks', loadChildren: './dailyworks/dailyworks.module#DailyworksModule' },
+      { path: 'damage', loadChildren: './damage/damage.module#DamageModule' },
+      { path: 'damagerepair', loadChildren: './damagerepair/damagerepair.module#DamagerepairModule' },
+      { path: 'due', loadChildren: './due/due.module#DueModule' },
+      { path: 'insurance', loadChildren: './insurance/insurance.module#InsuranceModule' },
+      { path: 'onlinebooking', loadChildren: './onlinebooking/onlinebooking.module#OnlinebookingModule' },
+      { path: 'otherexpense', loadChildren: './otherexpense/otherexpense.module#OtherexpenseModule' },
+      { path: 'products', loadChildren: './products/products.module#ProductsModule' },
+      { path: 'salary', loadChildren: './salary/salary.module#SalaryModule' },
+      { path: 'services', loadChildren: './services/services.module#ServicesModule' },
+      { path: 'spareparts', loadChildren: './spareparts/spareparts.module#SparepartsModule' },
       { path: 'payments', loadChildren: './payments/payments.module#PaymentsModule' },
-      { path: 'appointments', loadChildren: './appointments/appointments.module#AppointmentsModule' },
-      { path: 'treatments', loadChildren: './treatments/treatments.module#TreatmentsModule' },
-      { path: 'prescriptions', loadChildren: './prescriptions/prescriptions.module#PrescriptionsModule' },
-      { path: 'statistics', component: StatisticsComponent },
-      { path: 'reports', loadChildren: './reports/reports.module#ReportsModule' },
-      { path: 'settings', component: SettingsComponent }, 
+      { path: 'statistics', loadChildren: './statistics/statistics.module#StatisticsModule' },
+      // { path: 'reports', loadChildren: './reports/reports.module#ReportsModule' },
+      { path: 'settings', loadChildren: './settings/settings.module#SettingsModule' },
     ],
-  }, 
+  },
 ];
 
 @NgModule({
