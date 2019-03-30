@@ -7,17 +7,17 @@ export const navItems = [
     {
         name: 'Daily Works',
         url: 'dailyworks',
-        icon: 'icon-user'
+        icon: 'icon-people'
     },
     {
         name: 'Damage',
         url: 'damage',
-        icon: 'icon-people'
+        icon: 'cui-shield'
     },
     {
         name: 'Damage Repair',
         url: 'damagerepair',
-        icon: 'icon-credit-card'
+        icon: 'cui-wrench'
     },
     {
         name: 'Payments',
@@ -27,7 +27,7 @@ export const navItems = [
     {
         name: 'Insurance',
         url: 'insurance',
-        icon: 'icon-calendar'
+        icon: 'icon-wallet'
     },
     {
         name: 'Due',
@@ -37,43 +37,50 @@ export const navItems = [
     {
         name: 'Online Booking',
         url: 'onlinebooking',
-        icon: 'fa fa-thermometer-empty'
+        icon: 'icon-book-open'
     },
     {
         name: 'Other Expense',
         url: 'otherexpense',
-        icon: 'icon-mouse'
+        icon: 'icon-note'
     },
     {
         name: 'Products',
         url: 'products',
-        icon: 'icon-chart'
+        icon: 'icon-layers'
     },
     {
         name: 'Salary',
         url: 'salary',
-        icon: 'icon-chart'
+        icon: 'icon-drawer'
     },
     {
         name: 'Services',
         url: 'services',
-        icon: 'icon-chart'
+        icon: 'icon-support'
     },
     {
         name: 'Spare Parts',
         url: 'spareparts',
-        icon: 'icon-chart'
+        icon: 'cui-briefcase'
     },
     {
         name: 'Statistics',
         url: 'statistics',
         icon: 'icon-chart'
     },
-    // {
-    //     name: 'Reports',
-    //     url: 'reports',
-    //     icon: 'icon-docs'
-    // }, 
+    {
+        name: 'Reports',
+        url: '',
+        icon: 'icon-docs',
+        children: [
+            {
+                name: 'Daily Work Report',
+                url: '',
+                icon: 'icon-docs'
+            }
+        ]
+    },
     {
         name: 'Settings',
         url: 'settings',

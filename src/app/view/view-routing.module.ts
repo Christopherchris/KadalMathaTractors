@@ -22,7 +22,7 @@ const routes: Routes = [
       { path: 'spareparts', loadChildren: './spareparts/spareparts.module#SparepartsModule' },
       { path: 'payments', loadChildren: './payments/payments.module#PaymentsModule' },
       { path: 'statistics', loadChildren: './statistics/statistics.module#StatisticsModule' },
-      // { path: 'reports', loadChildren: './reports/reports.module#ReportsModule' },
+      { path: 'reports', loadChildren: './reports/reports.module#ReportsModule' },
       { path: 'settings', loadChildren: './settings/settings.module#SettingsModule' },
     ],
   },

@@ -58,6 +58,7 @@ import { CollapseModule } from 'ngx-bootstrap/collapse';
     ScrollPanelModule,
     AccordionModule,
     EditorModule,
-  ]
+  ],
+  providers:[]
 })
 export class ViewModule { }
