@@ -26,6 +26,8 @@ const routes: Routes = [
       { path: 'statistics', loadChildren: './statistics/statistics.module#StatisticsModule' },
       { path: 'reports', loadChildren: './reports/reports.module#ReportsModule' },
       { path: 'settings', loadChildren: './settings/settings.module#SettingsModule' },
+      { path: 'feedback', loadChildren: './feedback/feedback.module#FeedbackModule' },
+      { path: 'profile', loadChildren: './profile/profile.module#ProfileModule' },
     ],
   },
   { path: '**', redirectTo: '404' },
