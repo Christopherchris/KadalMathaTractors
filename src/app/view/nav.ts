@@ -71,12 +71,12 @@ export const navItems = [
     },
     {
         name: 'Reports',
-        url: '',
+        url: 'reports',
         icon: 'icon-docs',
         children: [
             {
                 name: 'Daily Work Report',
-                url: '',
+                url: 'reports/dailyworkreport',
                 icon: 'icon-docs'
             }
         ]
