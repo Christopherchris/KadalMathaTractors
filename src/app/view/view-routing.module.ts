@@ -3,12 +3,12 @@ import { Routes, RouterModule } from '@angular/router';
 import { DefaultLayoutComponent } from './default-layout.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
   {
     path: '', component: DefaultLayoutComponent,
     children: [
-      { path: '', redirectTo: 'home', pathMatch: 'full' },
-      { path: 'home', loadChildren: './home/home.module#HomeModule' },
+      { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
+      { path: 'dashboard', loadChildren: './dashboard/dashboard.module#DashboardModule' },
       { path: 'dailyworks', loadChildren: './dailyworks/dailyworks.module#DailyworksModule' },
       { path: 'damage', loadChildren: './damage/damage.module#DamageModule' },
       { path: 'damagerepair', loadChildren: './damagerepair/damagerepair.module#DamagerepairModule' },

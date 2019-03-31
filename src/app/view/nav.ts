@@ -1,13 +1,54 @@
 export const navItems = [
+    // {
+    //     name: 'Dashboard',
+    //     url: 'dashboard',
+    //     icon: 'nav-icon icon-speedometer',
+    // },
     {
-        name: 'Home',
-        url: 'home',
-        icon: 'icon-home',
+        name: 'Dashboard',
+        url: 'dashboard',
+        icon: 'icon-speedometer',
+        badge: {
+            variant: 'info',
+            text: 'NEW'
+        }
+    },
+    {
+        title: true,
+        name: 'Product'
+    },
+    {
+        name: 'Products',
+        url: 'products',
+        icon: 'icon-layers'
+    },
+    {
+        title: true,
+        name: 'Works'
     },
     {
         name: 'Daily Works',
         url: 'dailyworks',
         icon: 'icon-people'
+    },
+    {
+        name: 'Online Booking',
+        url: 'onlinebooking',
+        icon: 'icon-book-open'
+    },
+    {
+        title: true,
+        name: 'Services / Repair'
+    },
+    {
+        name: 'Services',
+        url: 'services',
+        icon: 'icon-support'
+    },
+    {
+        name: 'Spare Parts',
+        url: 'spareparts',
+        icon: 'cui-briefcase'
     },
     {
         name: 'Damage',
@@ -20,9 +61,8 @@ export const navItems = [
         icon: 'cui-wrench'
     },
     {
-        name: 'Payments',
-        url: 'payments',
-        icon: 'icon-credit-card'
+        title: true,
+        name: 'Expense'
     },
     {
         name: 'Insurance',
@@ -35,9 +75,9 @@ export const navItems = [
         icon: 'icon-calendar'
     },
     {
-        name: 'Online Booking',
-        url: 'onlinebooking',
-        icon: 'icon-book-open'
+        name: 'Salary',
+        url: 'salary',
+        icon: 'icon-drawer'
     },
     {
         name: 'Other Expense',
@@ -45,24 +85,13 @@ export const navItems = [
         icon: 'icon-note'
     },
     {
-        name: 'Products',
-        url: 'products',
-        icon: 'icon-layers'
+        name: 'Payments',
+        url: 'payments',
+        icon: 'icon-credit-card'
     },
     {
-        name: 'Salary',
-        url: 'salary',
-        icon: 'icon-drawer'
-    },
-    {
-        name: 'Services',
-        url: 'services',
-        icon: 'icon-support'
-    },
-    {
-        name: 'Spare Parts',
-        url: 'spareparts',
-        icon: 'cui-briefcase'
+        title: true,
+        name: 'Reports'
     },
     {
         name: 'Statistics',
@@ -81,9 +110,9 @@ export const navItems = [
             }
         ]
     },
-    {
-        name: 'Settings',
-        url: 'settings',
-        icon: 'icon-settings'
-    }
+    // {
+    //     name: 'Settings',
+    //     url: 'settings',
+    //     icon: 'icon-settings'
+    // }
 ];

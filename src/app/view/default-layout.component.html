@@ -1,7 +1,8 @@
-<app-header [fixed]="true" [navbarBrandFull]="{src: 'assets/img/brand/logo.svg', width: 89, height: 25, alt: '...'}"
+<app-header [navbarBrandRouterLink]="['dashboard']" [fixed]="true"
+  [navbarBrandFull]="{src: 'assets/img/brand/logo.svg', width: 89, height: 25, alt: '...'}"
   [navbarBrandMinimized]="{src: 'assets/img/brand/sygnet.svg', width: 50, height: 50, alt: '...'}"
-  [sidebarToggler]="'lg'" [asideMenuToggler]="'lg'">
-  <!-- <ul class="nav navbar-nav d-md-down-none">
+  [sidebarToggler]="'lg'" [asideMenuToggler]="false" [mobileAsideMenuToggler]="false">
+   <!--<ul class="nav navbar-nav d-md-down-none">
     <li class="nav-item px-3">
       <a class="nav-link" href="#">Dashboard</a>
     </li>
@@ -13,7 +14,7 @@
     </li>
   </ul> -->
   <ul class="nav navbar-nav ml-auto">
-    <!-- <li class="nav-item d-md-down-none">
+    <li class="nav-item d-md-down-none">
       <a class="nav-link" href="#"><i class="icon-bell"></i><span class="badge badge-pill badge-danger">5</span></a>
     </li>
     <li class="nav-item d-md-down-none">
@@ -21,7 +22,7 @@
     </li>
     <li class="nav-item d-md-down-none">
       <a class="nav-link" href="#"><i class="icon-location-pin"></i></a>
-    </li> -->
+    </li>
     <li class="nav-item dropdown" dropdown placement="bottom right">
       <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"
         dropdownToggle (click)="false">
@@ -59,13 +60,23 @@
   <!-- Main content -->
   <main class="main">
     <!-- Breadcrumb -->
-    <!-- <ol class="breadcrumb">
-      <app-breadcrumb></app-breadcrumb> -->
-    <!-- Breadcrumb Menu-->
-    <!-- <li class="breadcrumb-menu d-md-down-none">
+    <cui-breadcrumb>
+      <!-- Breadcrumb Menu-->
+      <li class="breadcrumb-menu d-md-down-none">
         <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
           <a class="btn" href="#"><i class="icon-speech"></i></a>
-          <a class="btn" [routerLink]="['/dashboard']"><i class="icon-graph"></i> &nbsp;Dashboard</a>
+          <a class="btn" [routerLink]="['dashboard']"><i class="icon-graph"></i> &nbsp;Dashboard</a>
+          <a class="btn" href="#"><i class="icon-settings"></i> &nbsp;Settings</a>
+        </div>
+      </li>
+    </cui-breadcrumb>
+    <!-- <ol class="breadcrumb"> -->
+      <!-- <app-breadcrumb></app-breadcrumb> -->
+      <!-- Breadcrumb Menu-->
+      <!-- <li class="breadcrumb-menu d-md-down-none">
+        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+          <a class="btn" href="#"><i class="icon-speech"></i></a>
+          <a class="btn" [routerLink]="['dashboard']"><i class="icon-graph"></i> &nbsp;Dashboard</a>
           <a class="btn" href="#"><i class="icon-settings"></i> &nbsp;Settings</a>
         </div>
       </li> -->
@@ -76,7 +87,7 @@
       <router-outlet></router-outlet>
     </div><!-- /.container-fluid -->
   </main>
-  <app-aside [fixed]="true" [display]="false">
+  <!-- <app-aside [fixed]="true" [display]="false">
     <tabset>
       <tab>
         <ng-template tabHeading><i class="icon-list"></i></ng-template>
@@ -343,7 +354,7 @@
         </div>
       </tab>
     </tabset>
-  </app-aside>
+  </app-aside> -->
 </div>
 <app-footer class="app-footer">
   <span><a href="#">Kadal Matha Tractors</a> &copy; 2019.</span>
