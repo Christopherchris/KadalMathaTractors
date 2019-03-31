@@ -1,18 +1,16 @@
-export const navItems = [
-    // {
-    //     name: 'Dashboard',
-    //     url: 'dashboard',
-    //     icon: 'nav-icon icon-speedometer',
-    // },
+export const navItems = [ 
     {
         name: 'Dashboard',
         url: 'dashboard',
         icon: 'icon-speedometer',
-        badge: {
-            variant: 'info',
-            text: 'NEW'
-        }
+        // badge: {
+        //     variant: 'info',
+        //     text: 'NEW'
+        // }
     },
+    // {
+    //     divider: true
+    // },
     {
         title: true,
         name: 'Product'
@@ -22,6 +20,9 @@ export const navItems = [
         url: 'products',
         icon: 'icon-layers'
     },
+    // {
+    //     divider: true
+    // },
     {
         title: true,
         name: 'Works'
@@ -36,6 +37,9 @@ export const navItems = [
         url: 'onlinebooking',
         icon: 'icon-book-open'
     },
+    // {
+    //     divider: true
+    // },
     {
         title: true,
         name: 'Services / Repair'
@@ -60,6 +64,9 @@ export const navItems = [
         url: 'damagerepair',
         icon: 'cui-wrench'
     },
+    // {
+    //     divider: true
+    // },
     {
         title: true,
         name: 'Expense'
@@ -89,6 +96,9 @@ export const navItems = [
         url: 'payments',
         icon: 'icon-credit-card'
     },
+    // {
+    //     divider: true
+    // },
     {
         title: true,
         name: 'Reports'
@@ -115,4 +125,11 @@ export const navItems = [
     //     url: 'settings',
     //     icon: 'icon-settings'
     // }
+    // {
+    //     name: 'Try CoreUI PRO',
+    //     url: 'http://coreui.io/pro/angular/',
+    //     icon: 'icon-layers',
+    //     variant: 'danger',
+    //     attributes: { target: '_blank', rel: 'noopener' }
+    //   }
 ];

@@ -5,7 +5,9 @@ import { DefaultLayoutComponent } from './default-layout.component';
 const routes: Routes = [
   { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
   {
-    path: '', component: DefaultLayoutComponent,
+    path: '', component: DefaultLayoutComponent, data: {
+      title: 'Home'
+    },
     children: [
       { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
       { path: 'dashboard', loadChildren: './dashboard/dashboard.module#DashboardModule' },
@@ -26,6 +28,7 @@ const routes: Routes = [
       { path: 'settings', loadChildren: './settings/settings.module#SettingsModule' },
     ],
   },
+  { path: '**', redirectTo: '404' },
 ];
 
 @NgModule({

@@ -3,7 +3,11 @@ import { Routes, RouterModule } from '@angular/router';
 import { DailyworksComponent } from './dailyworks.component';
 
 const routes: Routes = [
-    { path: '', component: DailyworksComponent }
+    {
+        path: '', component: DailyworksComponent, data: {
+            title: 'Daily Work'
+        },
+    }
 ];
 @NgModule({
     imports: [RouterModule.forChild(routes)],

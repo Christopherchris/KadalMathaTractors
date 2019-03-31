@@ -3,8 +3,26 @@ import { Routes, RouterModule } from '@angular/router';
 import { DailyworkreportComponent } from './dailyworkreport/dailyworkreport.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'dailyworkreport', pathMatch: 'full' },
-  { path: 'dailyworkreport', component: DailyworkreportComponent }
+  {
+    path: '',
+    data: {
+      title: 'Reports'
+    },
+    children: [
+      {
+        path: '',
+        redirectTo: 'dailyworkreport'
+      },
+      {
+        path: 'dailyworkreport',
+        component: DailyworkreportComponent,
+        data: {
+          title: 'Daily Work Report'
+        }
+      },
+    ]
+  },
+  { path: '**', redirectTo: '404' },
 ];
 
 @NgModule({

@@ -3,7 +3,11 @@ import { Routes, RouterModule } from '@angular/router';
 import { PaymentsComponent } from './payments.component';
 
 const routes: Routes = [
-    { path: '', component: PaymentsComponent }
+    {
+        path: '', component: PaymentsComponent, data: {
+            title: 'Payments'
+        },
+    }
 ];
 @NgModule({
     imports: [RouterModule.forChild(routes)],

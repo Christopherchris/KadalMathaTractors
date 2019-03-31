@@ -3,7 +3,11 @@ import { Routes, RouterModule } from '@angular/router';
 import { StatisticsComponent } from './statistics.component';
 
 const routes: Routes = [
-    { path: '', component: StatisticsComponent }
+    {
+        path: '', component: StatisticsComponent, data: {
+            title: 'Statistics'
+        },
+    }
 ];
 @NgModule({
     imports: [RouterModule.forChild(routes)],

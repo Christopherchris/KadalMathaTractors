@@ -3,7 +3,11 @@ import { Routes, RouterModule } from '@angular/router';
 import { DamageComponent } from './damage.component';
 
 const routes: Routes = [
-    { path: '', component: DamageComponent }
+    {
+        path: '', component: DamageComponent, data: {
+            title: 'Damage'
+        },
+    }
 ];
 @NgModule({
     imports: [RouterModule.forChild(routes)],
