@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { navItems } from './nav';
 
 @Component({
-  selector: 'app-default-layout',
+  selector: 'app-dashboard',
   templateUrl: './default-layout.component.html',
   styleUrls: ['./default-layout.component.scss']
 })
