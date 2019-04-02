@@ -1,82 +1,88 @@
 <div class="animated fadeIn">
-  <div class="card card-accent-primary">
-    <!--     -->
-    <div class="card-body">
-      <tabset>
-        <tab>
-          <ng-template tabHeading><i class="icon-list"></i> General
-          </ng-template>
-          <div class="col-lg-12 col-md-12 col-sm-12">
-            <h6>General settings</h6>
-            <hr>
-            <div>
-              <div class="form-group">
-                <div class="input-group-prepend">
-                  <label class="switch switch-pill switch-label switch-primary">
-                    <input type="checkbox" class="switch-input" [(ngModel)]="allowPatient">
-                    <span class="switch-slider" data-checked="Yes" data-unchecked="No"></span>
-                  </label>
-                  <label class="ms-Toggle-stateTex text-142" (click)="allowPatient = !allowPatient">Allow user Access
-                    to
-                    login</label>
+  <div class="row">
+    <div class="col-lg-12 col-sm-12 col-md-12">
+      <div class="card card-accent-primary">
+        <!-- <div class="card-header">
+          Card title
+        </div> -->
+        <div class="card-body">
+          <tabset>
+            <tab>
+              <ng-template tabHeading><i class="icon-list"></i> General
+              </ng-template>
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                <h6>General settings</h6>
+                <hr>
+                <div>
+                  <div class="form-group">
+                    <div class="input-group-prepend">
+                      <label class="switch switch-pill switch-label switch-primary">
+                        <input type="checkbox" class="switch-input" [(ngModel)]="allowPatient">
+                        <span class="switch-slider" data-checked="&#x2713;" data-unchecked="&#x2715;"></span>
+                      </label>
+                      <label class="ms-Toggle-stateTex text-142" (click)="allowPatient = !allowPatient">
+                        Allow user Access to login</label>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </tab>
-        <tab>
-          <ng-template tabHeading><i class="icon-calculator"></i> Create account email</ng-template>
-          <div class="col-lg-12 col-md-12 col-sm-12">
-            <h6>Create account email template settings</h6>
-            <hr>
-            <div>
-              <p-editor id="editorCreateAccount" [(ngModel)]="createAccountEmail" [style]="{'height':'320px'}">
-              </p-editor>
-            </div>
-          </div>
-        </tab>
-        <tab>
-          <ng-template tabHeading><i class="icon-pie-chart"></i> Forgot account email</ng-template>
-          <div class="col-lg-12 col-md-12 col-sm-12">
-            <h6>Forgot account email template settings</h6>
-            <hr>
-            <div>
-              <p-editor [(ngModel)]="forgotAccountEmail" [style]="{'height':'320px'}"></p-editor>
-            </div>
-          </div>
-        </tab>
-        <tab>
-          <ng-template tabHeading><i class="icon-pie-chart"></i> Make email messages</ng-template>
-          <div class="col-lg-12 col-md-12 col-sm-12">
-            <h6>Make email messages template settings</h6>
-            <hr>
-            <div>
-              <p-editor [(ngModel)]="emailMessage" [style]="{'height':'320px'}"></p-editor>
-            </div>
-          </div>
-        </tab>
-        <tab>
-          <ng-template tabHeading><i class="icon-pie-chart"></i> Sms messages</ng-template>
-          <div class="col-lg-12 col-md-12 col-sm-12">
-            <h6>Sms messages template settings</h6>
-            <hr>
-            <div>
-              <p-editor [(ngModel)]="smsMessage" [style]="{'height':'320px'}"></p-editor>
-            </div>
-          </div>
-        </tab>
-        <tab>
-          <ng-template tabHeading><i class="icon-pie-chart"></i> Whatsapp message</ng-template>
-          <div class="col-lg-12 col-md-12 col-sm-12">
-            <h6>Whatsapp message template settings</h6>
-            <hr>
-            <div>
-              <p-editor [(ngModel)]="whatsappMessage" [style]="{'height':'320px'}"></p-editor>
-            </div>
-          </div>
-        </tab>
-      </tabset>
-      <br />
+            </tab>
+            <tab>
+              <ng-template tabHeading><i class="icon-calculator"></i> Create account email</ng-template>
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                <h6>Create account email template settings</h6>
+                <hr>
+                <div>
+                  <p-editor id="editorCreateAccount" [(ngModel)]="createAccountEmail" [style]="{'height':'320px'}">
+                  </p-editor>
+                </div>
+              </div>
+            </tab>
+            <tab>
+              <ng-template tabHeading><i class="icon-pie-chart"></i> Forgot account email</ng-template>
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                <h6>Forgot account email template settings</h6>
+                <hr>
+                <div>
+                  <p-editor [(ngModel)]="forgotAccountEmail" [style]="{'height':'320px'}"></p-editor>
+                </div>
+              </div>
+            </tab>
+            <tab>
+              <ng-template tabHeading><i class="icon-pie-chart"></i> Make email messages</ng-template>
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                <h6>Make email messages template settings</h6>
+                <hr>
+                <div>
+                  <p-editor [(ngModel)]="emailMessage" [style]="{'height':'320px'}"></p-editor>
+                </div>
+              </div>
+            </tab>
+            <tab>
+              <ng-template tabHeading><i class="icon-pie-chart"></i> Sms messages</ng-template>
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                <h6>Sms messages template settings</h6>
+                <hr>
+                <div>
+                  <p-editor [(ngModel)]="smsMessage" [style]="{'height':'320px'}"></p-editor>
+                </div>
+              </div>
+            </tab>
+            <tab>
+              <ng-template tabHeading><i class="icon-pie-chart"></i> Whatsapp message</ng-template>
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                <h6>Whatsapp message template settings</h6>
+                <hr>
+                <div>
+                  <p-editor [(ngModel)]="whatsappMessage" [style]="{'height':'320px'}"></p-editor>
+                </div>
+              </div>
+            </tab>
+          </tabset>
+          <br />
+        </div>
+      </div>
     </div>
+
   </div>
 </div>
